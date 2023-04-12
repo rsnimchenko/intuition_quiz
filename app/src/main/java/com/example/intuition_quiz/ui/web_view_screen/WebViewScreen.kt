@@ -1,6 +1,5 @@
 package com.example.intuition_quiz.ui.web_view_screen
 
-import android.util.Log
 import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable

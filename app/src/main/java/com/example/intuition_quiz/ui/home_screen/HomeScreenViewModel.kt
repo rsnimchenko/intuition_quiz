@@ -1,8 +1,5 @@
 package com.example.intuition_quiz.ui.home_screen
 
-import android.util.Log
-import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.lifecycle.ViewModel
 import com.example.intuition_quiz.util.Constants
 import kotlinx.coroutines.flow.MutableStateFlow

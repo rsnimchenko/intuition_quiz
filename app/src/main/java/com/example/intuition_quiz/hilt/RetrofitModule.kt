@@ -1,13 +1,7 @@
 package com.example.intuition_quiz.hilt
 
-import com.example.intuition_quiz.R
 import com.example.intuition_quiz.data.retrofit.NumbersApi
 import com.example.intuition_quiz.util.Constants
-import com.google.firebase.ktx.Firebase
-import com.google.firebase.remoteconfig.FirebaseRemoteConfig
-import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
-import com.google.firebase.remoteconfig.ktx.remoteConfig
-import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
