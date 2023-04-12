@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1026680588872",
+    "project_id": "intuition-quiz-531ed",
+    "storage_bucket": "intuition-quiz-531ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1026680588872:android:52babca8572da24960e67d",
+        "android_client_info": {
+          "package_name": "com.example.intuition_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1026680588872-lpdsqhhpoqgja46f59nbng1rd4916si0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoAHMCeceWziw7rzWCJT-l9J-SDMaaWW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1026680588872-lpdsqhhpoqgja46f59nbng1rd4916si0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

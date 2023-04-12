@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.intuition_quiz'
+    compileSdk gradleDependencies.compileSdk
+
+    defaultConfig {
+        applicationId "com.example.intuition_quiz"
+        minSdk gradleDependencies.minSdk
+        targetSdk gradleDependencies.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.4.1'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+    implementation platform(firebaseDependencies.bom)
+    implementation firebaseDependencies.config
+    implementation firebaseDependencies.analytics
+
+    implementation androidXDependencies.lib
+    implementation androidXDependencies.splashScreen
+
+    implementation lifecycleDependencies.runtimeKtx
+    implementation lifecycleDependencies.viewmodelCompose
+
+    implementation composeDependencies.activityCompose
+    implementation composeDependencies.ui
+    implementation composeDependencies.uiToolingPreview
+    implementation composeDependencies.material
+    implementation composeDependencies.navigationCompose
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$composeUiVersion"
+    debugImplementation composeDependencies.uiTooling
+
+    implementation hiltDependencies.lib
+    implementation hiltDependencies.navigationCompose
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$composeUiVersion"
+    kapt hiltDependencies.compiler
+
+    implementation coilDependencies.compose
+
+    implementation retrofitDependencies.lib
+    implementation retrofitDependencies.converterGson
+
+    implementation roomDependencies.runtime
+    implementation roomDependencies.ktx
+    annotationProcessor roomDependencies.compiler
+    kapt roomDependencies.kapt
+
+    implementation accompanistDependencies.webview
+}

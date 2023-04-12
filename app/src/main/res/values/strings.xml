@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Intuition Quiz</string>
+    <string name="guess_number">Guess number</string>
+    <string name="number_of_tries">Number of tries: %1$d</string>
+    <string name="guess_the_number_range">Guess the number from %1$d until %2$d</string>
+    <string name="enter_number_placeholder">Enter number…</string>
+    <string name="guess">Guess</string>
+    <string name="game_over">Game Over</string>
+    <string name="game_win">Game Win</string>
+    <string name="didnt_guess">You didn\'t guess the number.</string>
+    <string name="try_again">Try Again</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+</resources>
